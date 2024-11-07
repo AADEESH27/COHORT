@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background-image: url("./ma.webp");
+  background-size: contain;
+  font-family: "Times New Roman", Times, serif;
+  height: 110vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+}
+
+#logo {
+  padding: 20px;
+  display: inline-block;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.597);
+  color: black;
+  border-radius: 5px;
+}
+
+#navbar {
+  padding: 20px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+}
+
+#navbar > a {
+  background-color: rgba(255, 255, 255, 0.597);
+  color: black;
+  margin: 0 0 0 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#hero {
+  position: relative;
+  top: 60px;
+  left: 60px;
+  width: 500px;
+  height: 200px;
+}
+
+#hero > h1 {
+  color: white;
+  font-size: 80px;
+}
+
+#hero > p {
+  color: white;
+  font-size: 20px;
+}
+
+button {
+  border: 1px solid rgba(255, 255, 255, 0.597);
+  border-radius: 5px;
+  position: relative;
+  top: 350px;
+  left: 60px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.597);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 0;
+}
