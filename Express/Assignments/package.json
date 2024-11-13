@@ -1,9 +1,9 @@
 {
   "name": "assignments",
   "version": "1.0.0",
-  "main": "filserver.js",
+  "main": "fileserver.js",
   "scripts": {
-    "dev": "nodemon todoserver.js",
+    "dev": "nodemon fileserver.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

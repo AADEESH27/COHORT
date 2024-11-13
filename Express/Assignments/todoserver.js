@@ -26,9 +26,7 @@ app.get("/todos/:requestedID", (request, response) => {
   const result = todos.find((todo) => {
     return todo["id"] === requestedID;
   });
-  result;
   if (result) {
-    requestedID;
     response.status(200).json(result);
   } else {
     response.status(404).send("Requested id does not exists");
@@ -39,7 +37,6 @@ app.post("/todos", (request, response) => {
   let data = request.body;
   data = { id: generateUniqueIdManually(), ...data };
   todos.push(data);
-  data;
   response.status(201).json({ id: data["id"] });
 });
 

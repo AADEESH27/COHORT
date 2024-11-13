@@ -16,7 +16,15 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const { Pool } = require("pg");
 const app = express();
+const pool = new Pool({
+  user: "adeeshbali",
+  password: "Haha^552615",
+  host: "localhost",
+  port: 5432,
+  database: "test_db"
+});
 const port = 3001;
 
 app.use(express.json());
