@@ -4,3 +4,7 @@ body {
   font-family: "Monaco", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
 }
+
+button {
+  cursor: pointer;
+}
