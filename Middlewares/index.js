@@ -18,7 +18,7 @@ app.use(express.json());
 app.post("/health", (request, response) => {
   const data = request.body["arr"];
   const parsedData = schema.safeParse(data);
-  response.send(parsedData);h
+  response.send(parsedData);
 });
 
 app.use((error, request, response, next) => {
