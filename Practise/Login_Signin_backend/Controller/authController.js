@@ -1,4 +1,4 @@
-const { User } = require("../Database/database");
+const { User } = require("../Model/model");
 const bcryptjs = require("bcryptjs");
 const { generateToken } = require("../Tokens/ownjwtfunctions");
 const saltRounds = 10;

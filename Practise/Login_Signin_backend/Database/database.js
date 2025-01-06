@@ -12,10 +12,4 @@ const connectToDb = () => {
     .catch((error) => console.log(error));
 };
 
-const User = mongoose.model("CurrentUsers", {
-  name: String,
-  username: String,
-  password: String,
-});
-
-module.exports = { connectToDb, User };
+module.exports = { connectToDb };
