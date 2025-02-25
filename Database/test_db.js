@@ -1,8 +1,10 @@
 const express = require("express");
-const { pool } = require("./db");
+const { pool, connectDB } = require("./db");
 const app = express();
 const port = 3001;
 app.use(express.json());
+
+connectDB();
 
 app.get("/", async (request, response) => {
   try {

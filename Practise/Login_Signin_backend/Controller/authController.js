@@ -6,6 +6,9 @@ const saltRounds = 10;
 const userSignUp = async (request, response) => {
   try {
     const { name, username, password } = request.body;
+    if (!name || !username || !password) {
+      return res.status(400).json({ error: "All fields are required." });
+    }
     const result = await createUser(name, username, password);
     response
       .status(200)

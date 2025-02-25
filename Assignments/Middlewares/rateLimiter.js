@@ -5,10 +5,13 @@ setInterval(function () {
 }, 1000);
 
 function rateLimiter(request, response, next) {
-  let count = 0;
-  const name = request.query["name"];
-  numberOfRequestsForUser[name] = ++count;
-  if (numberOfRequestsForUser[name] > 5) {
+  const userId = request.query["userId"];
+  if (!numberOfRequestsForUser[userId]) {
+    numberOfRequestsForUser[userId] = 1;
+  }
+  ++numberOfRequestsForUser[userId];
+  console.log(numberOfRequestsForUser[userId]);
+  if (numberOfRequestsForUser[userId] > 5) {
     response.status(404).json({ message: "Limit Reached" });
   }
   next();

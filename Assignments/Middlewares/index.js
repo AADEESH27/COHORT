@@ -7,11 +7,11 @@ app.use(countRequests);
 app.use(rateLimiter);
 
 app.get("/user", function (request, response) {
-  response.status(200).json({ name: "john" });
+  response.status(200);
 });
 
 app.post("/user", function (request, response) {
-  response.status(200).json({ msg: "created dummy user" });
+  response.status(200));
 });
 
 app.get("/requests", function (request, response) {

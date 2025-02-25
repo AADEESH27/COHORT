@@ -1,9 +1,17 @@
 const express = require("express");
+const cors = require("cors");
 const authRouter = require("./Routes/authRoutes");
 const userRouter = require("./Routes/userRoutes");
 const { connectToDb } = require("./Database/database");
 
 const app = express();
+
+app.use(
+  cors({
+    origin: "http://127.0.0.1:5500",
+  })
+);
+
 const PORT = 3001;
 
 //db connection
